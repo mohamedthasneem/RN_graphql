@@ -1,14 +1,14 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-// import {createStackNavigator} from '@react-navigation/stack';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import HomeScreen from '../components/Home/HomeScreen';
+import MainTabNavigator from './MainTabNavigator';
 
 const MainStack = createNativeStackNavigator();
 
 const MainStackNavigator = () => {
   return (
-    <MainStack.Navigator>
-      <MainStack.Screen name="Home" component={HomeScreen} />
+    <MainStack.Navigator screenOptions={{headerShown:false}}>
+      <MainStack.Screen name="Tabs" component={MainTabNavigator} />
     </MainStack.Navigator>
   );
 };

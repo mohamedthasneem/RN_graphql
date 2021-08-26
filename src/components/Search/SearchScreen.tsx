@@ -1,12 +1,12 @@
 import React from 'react';
 import {Box, Text} from 'react-native-design-utility';
 
-const HomeScreen = () => {
+const SearchScreen = () => {
   return (
     <Box f={1} center>
-      <Text color="red">hi</Text>
+      <Text color="red">SearchScreen</Text>
     </Box>
   );
 };
 
-export default HomeScreen;
+export default SearchScreen;
