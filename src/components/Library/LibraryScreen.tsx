@@ -6,6 +6,7 @@ const LibraryScreen = () => {
   const {t} = useTranslation();
   return (
     <Box f={1} center>
+      {/* <Text color="red">lib Screen</Text> */}
       <Text color="red">{t('lib Screen')}</Text>
     </Box>
   );

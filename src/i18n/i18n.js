@@ -1,20 +1,25 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import {getLocales} from 'react-native-localize';
+
+import translationEN from '../locales/en/translationEN.json';
+import translationKO from '../locales/ko/translationKO.json';
+
+const resources = {
+  en: {
+    translation: translationEN,
+  },
+  ko: {
+    translation: translationKO,
+  },
+};
 
 i18n.use(initReactI18next).init({
-  lng: getLocales()[0].languageCode,
-  fallbackLng: 'en',
-  resources: {
-    en: {
-      translation: {
-        'lib Screen': 'Library Screen',
-      },
-    },
-    ko: {
-      translation: {
-        'lib Screen': '라이브러리 화면',
-      },
-    },
+  resources,
+  lng: 'ko',
+  keySeparator: false,
+  interpolation: {
+    escapeValue: false,
   },
 });
+
+export default i18n;

@@ -5,6 +5,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {theme} from './src/constants/theme';
 import MainStackNavigator from './src/navigators/MainStackNavigator';
 
+import './src/i18n/i18n';
+
 const App = () => {
   return (
     <UtilityThemeProvider theme={theme}>
